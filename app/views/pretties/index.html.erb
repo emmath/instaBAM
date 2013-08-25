@@ -1,0 +1,21 @@
+<h1>Lets look up a HashTag!</h1>
+
+<%= link_to 'New', new_pretty_path %>
+
+<h2>Hashtags on File</h2>
+
+<% @pretties.each do |pretty| %>
+  <%= pretty.tag %>
+  <%= pretty.created_at.strftime("Created on %B %e!") %>
+<table>
+  <tr>
+    <td><%= link_to 'Show', pretty %></td>
+    <td><%= link_to 'Edit', edit_pretty_path(pretty) %></td>
+    <td><%= link_to 'Destroy', pretty, method: :delete, data: { confirm: 'NOOOOOOOO! Well, ok.' } %></td>
+  </tr>
+</table>
+<% end %>
+
+
+
+
