@@ -9,9 +9,7 @@ gem 'sqlite3'
 
 gem 'httparty'
 
-gem 'instagram'
-
-gem 'dotenv-rails', :groups => [:development, :test]
+gem 'figaro'
 
 
 # Gems used only for assets and not required
