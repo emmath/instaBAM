@@ -1,12 +1,12 @@
 <%= form_for(@pretty) do |f| %>
 
   <div class="field">
-    <%= f.label :tag %><br>
-    <%= f.text_field :tag %>
+    <%= f.label "Hashtag:" %><br>
+    <%= f.text_field :tag  %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Look it up!" %>
   </div>
 
   <% end %>

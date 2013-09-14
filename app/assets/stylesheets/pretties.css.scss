@@ -1,3 +1,26 @@
+
 body {
-  font-family: Muli;
+  font-family: 'Muli', sans-serif;
+  text-align: center;
 }
+
+#about {
+  position:absolute;
+  width:600px;
+  height:300px;
+  z-index:15;
+  top:45%;
+  left:37%;
+  margin:-150px 0 0 -150px;
+}
+
+p {
+  text-align: center;
+}
+
+.actions {
+  margin-top: .05em;
+  margin-bottom: 1em;
+}
+
+

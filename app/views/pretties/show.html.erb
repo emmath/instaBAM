@@ -3,3 +3,8 @@
 <% @images.each do |image| %>
   <img src='<%= image["images"]["thumbnail"]["url"] %>'>
 <% end %>
+
+<br>
+
+<%= link_to 'Look up another hashtag!', new_pretty_path %> |
+<%= link_to 'Home', pretties_path %>

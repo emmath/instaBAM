@@ -1,20 +1,17 @@
-<h1>Lets look up a HashTag!</h1>
+<h1>Welcome to Insta-bam, a tiny hashtag app!</h1>
 
-<%= link_to 'New', new_pretty_path %>
+<div id="about">
+  <h2>What is this?</h2>
+  <p>Type in any hashtag you can dream of and ta-da! You will see the most recent 20 photos on instagram tagged with that hashtag. It's like magic. Refresh to make it real time!</p>
+  <h2>Why?</h2>
+  <p>Currently, Instagram doesn't provide a web application through which to search hashtags.</p>
+  <h2>Who?</h2>
+  <p>I'm Emma, a Ruby on Rails developer in the Great Northwest. Check me out over <%= link_to 'here', 'http://www.emmacodes.com' %></p>
+  <h2>Whats instagram?</h2>
+  <p>I love your innocence.</p>
+</div>
 
-<h2>Hashtags on File</h2>
-
-<% @pretties.each do |pretty| %>
-  <%= pretty.tag %>
-  <%= pretty.created_at.strftime("Created on %B %e!") %>
-<table>
-  <tr>
-    <td><%= link_to 'Show', pretty %></td>
-    <td><%= link_to 'Edit', edit_pretty_path(pretty) %></td>
-    <td><%= link_to 'Destroy', pretty, method: :delete, data: { confirm: 'NOOOOOOOO! Well, ok.' } %></td>
-  </tr>
-</table>
-<% end %>
+<h2>Ready to get started? <%= link_to 'Search for a Hashtag!', new_pretty_path %></h2>
 
 
 
